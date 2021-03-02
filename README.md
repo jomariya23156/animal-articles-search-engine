@@ -1,6 +1,6 @@
 # Animal Articles Search Engine
 ## What's the problem we are trying to solve?
-&nbsp;&nbsp;The problem we are trying to solve is many websites that integrate the animal article
+&nbsp;&nbsp;&nbsp;&nbsp;The problem we are trying to solve is many websites that integrate the animal article
 are having the non-animal related articles too. That could make the search engine not
 efficient and show a lot of animal-unrelated articles or information. Moreover, some websites
 show the information from unreliable sources and sometimes those articles are outdated.
@@ -11,7 +11,7 @@ fresh articles.
 *Note that this is our prototype, so we don't focus much on good look.
 
 ## What's the source of article and how can we know whether it's reliable?
-&nbsp;&nbsp;We gathered the articles from www.livescience.com by doing web scraping with <b>BeautifulSoup</b>. This website published various types of news, not just animals but all other science related news. But for this project we focus only Animal articles. <b>Livescience</b> have over <b>1.5M</b> followers all across platforms and they always cite their articels. This can make sure of their credibility.
+&nbsp;&nbsp;&nbsp;&nbsp;We gathered the articles from www.livescience.com by doing web scraping with <b>BeautifulSoup</b>. This website published various types of news, not just animals but all other science related news. But for this project we focus only Animal articles. <b>Livescience</b> have over <b>1.5M</b> followers all across platforms and they always cite their articels. This can make sure of their credibility.
 
 ## Tools we use
 * Elasticsearch (for search engine)
@@ -27,7 +27,7 @@ fresh articles.
 6. Test and done!
 
 ## Results
-&nbsp;&nbsp;This is the main page before do searching. We have 3 search boxes; 1st one is compulsory, the rest are optional. The first box is what users want to search. The second one is the words users don't want to include in the search results, and the last one are maximum numbers of results users wish to see.
+&nbsp;&nbsp;&nbsp;&nbsp;This is the main page before do searching. We have 3 search boxes; 1st one is compulsory, the rest are optional. The first box is what users want to search. The second one is the words users don't want to include in the search results, and the last one are maximum numbers of results users wish to see.
 ![Main page](./images/Elastic1.jpg)
   
 &nbsp;&nbsp;This is the result when users input the search boxes. Each article contain rank which is ordered respected to the score with Elasticsearch's Algorithm <b>(BM25)</b> and article's metadata.
@@ -42,10 +42,10 @@ fresh articles.
 3. The main website of livescience provide only 9 latest pages (there is archive pages, but there are mix of links rather than only animals), and each page has only 20 articles links, That's totally only 180 which is not enough for us. So we need to use web.archive.org to go back in time and scrape from the older links.
 ![Web Archive](./images/WebArchive.jpg)
   
-&nbsp;&nbsp;From the current version of websites we can scrape 9 pages in 1 go very easily because the links are fixed with page number. So this block of code do the job for us.  
+&nbsp;&nbsp;&nbsp;&nbsp;From the current version of websites we can scrape 9 pages in 1 go very easily because the links are fixed with page number. So this block of code do the job for us.  
 ![9 pages in 1 go](./images/9-pages-in-1-go.jpg)
   
-&nbsp;&nbsp;But for those links from web.archive.org, they are randomly generated. There are no pattern we can use. So, we have to manually copy-paste one by one. Each link from the older version of the website contain only 10 links. We have to copy-paste a lot of them
+&nbsp;&nbsp;&nbsp;&nbsp;But for those links from web.archive.org, they are randomly generated. There are no pattern we can use. So, we have to manually copy-paste one by one. Each link from the older version of the website contain only 10 links. We have to copy-paste a lot of them
 ![Web archive links](./images/ManualLinks.jpg)
   
 
