@@ -7,8 +7,8 @@ show the information from unreliable sources and sometimes those articles are ou
 Therefore, we created the search engine that works specifically for animal-related articles
 which are published by reliable websites and authors. We retrieved more than <b>900+</b> articles
 from 2017 to November, 2020 which is to make sure our search engine has only the latest and
-fresh articles.
-*Note that this is our prototype, so we don't focus much on good look.
+fresh articles.  
+**Note that this is our prototype, so we don't focus much on good look.
 
 ## What's the source of article and how can we know whether it's reliable?
 &nbsp;&nbsp;&nbsp;&nbsp;We gathered the articles from www.livescience.com by doing web scraping with <b>BeautifulSoup</b>. This website published various types of news, not just animals but all other science related news. But for this project we focus only Animal articles. <b>Livescience</b> have over <b>1.5M</b> followers all across platforms and they always cite their articels. This can make sure of their credibility.
@@ -63,5 +63,7 @@ fresh articles.
 - More function on search bars (type correction, suggestion, auto-complete, etc.)
 - Better looking UX/UI
 - More Data
-
+  
+**For full detail about this project, please take a look at Animal_Articles_Search_Engine.pdf
+  
 # Thank you for reaching out and Read to the end. You are AMAZING. :D
