@@ -64,6 +64,6 @@ fresh articles.
 - Better looking UX/UI
 - More Data
   
-**For full detail about this project, please take a look at Animal_Articles_Search_Engine.pdf
+***For full detail about this project, please take a look at Animal_Articles_Search_Engine.pdf PLease ignore the first page, it is for the course submission at my university.***
   
 # Thank you for reaching out and Read to the end. You are AMAZING. :D
